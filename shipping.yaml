@@ -37,9 +37,9 @@
 
   - name: extract shipping code
     ansible.builtin.unarchive:
-    src: /tmp/shipping.zip
-    dest: /app
-    remote_src: yes
+      src: /tmp/shipping.zip
+      dest: /app
+      remote_src: yes
 
   - name: install maven dependencies
     ansible.builtin.command: mvn clean package
