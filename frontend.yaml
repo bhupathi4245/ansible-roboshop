@@ -20,12 +20,12 @@
       enabled: yes
 
   - name: remove html folder
-    ansible.builtin.files:
+    ansible.builtin.file:
       path: /usr/share/nginx/html
       state: absent
 
   - name: create html folder
-    ansible.builtin.files:
+    ansible.builtin.file:
       path: /usr/share/nginx/html
       state: directory
 
