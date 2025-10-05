@@ -52,12 +52,12 @@
       chdir: /app
 
   - name: copy shipiing service
-    ansible.builtin.systemd_service:
+    ansible.builtin.service:
       src: shipping.service
       dest: /etc/systemd/system/shipping.service
 
   - name: daemon reload
-    ansible.builtin.service:
+    ansible.builtin.systemd_service:
       daemon_reload: true
 
   - name: start and enable shipping service
