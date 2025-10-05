@@ -40,7 +40,7 @@
 
   - name: install dependencies
     community.general.npm:
-    path: /app
+      path: /app
 
   - name: copy services
     ansible.builtin.copy:
