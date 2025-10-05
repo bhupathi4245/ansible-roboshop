@@ -14,7 +14,7 @@
       state: present
 
   - name: create dierectory
-    ansible.builtin:file:
+    ansible.builtin.file:
       path: /app
       state: directory
 
