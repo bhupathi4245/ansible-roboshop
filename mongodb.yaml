@@ -1,6 +1,6 @@
 - name: configuring mongodb server
   become: yes
-  host: mongodb
+  hosts: mongodb
   tasks:
   - name: copy mongodb repo
     ansible.builtin.cpy:
